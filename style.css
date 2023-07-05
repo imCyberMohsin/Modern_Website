@@ -1,0 +1,389 @@
+/*? Styling The Website  */
+
+/* imported google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+/* 
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif; 
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color: #183b54;
+    --secondary-text-color: #577592;
+    --accent-color: #e74694;
+    --accent-color-dark: #8a2355;
+    --padding-inline-section: 20px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+    overflow-y: scroll;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/*! Utillity Section Starts Here... */
+
+.small-bold-text{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding: var(--padding-inline-section)
+}
+
+.flex{
+    display:flex;
+    align-items:center;
+}
+
+.hover-link{
+    color:var(--primary-text-color);
+    transition: 0.9 ease-in-out;
+}
+.hover-link:hover{
+    color:#e74694;
+}
+
+.primary-button{
+    display: flex;
+    border: 2px transparent;
+    border-radius: 6px;
+    align-items:center;
+    justify-content: center;
+    width: 100px;
+    height: 45px;
+    color: white !important;
+    background-color: #e74694;
+    font-weight: 800px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2 ease-out;
+}
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+.secondary-button{
+    display:flex;
+    border: 0.5px solid var(--accent-color);
+    color: var(--accent-color);
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 45px;
+    font: weight 800px;
+    transition: 0.2 ease-out;
+    margin-right: -24px;
+}
+.secondary-button:hover{
+    border: 1px solid var(--accent-color-dark);
+    color: var(--accent-color-dark)
+}
+
+.tester-btn{
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: #eeeeee;
+    border-radius: 4px;
+    width:140px;
+    height:30px;
+    font-size: 0.9rem;
+    margin-right: 40px;
+}
+
+
+/*? Top-Banner Section */
+
+.banner-text{
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+.top-banner{
+    background-color: #e74694;
+    background-image: url('./assets/asset\ 32.png');
+    background-size: 300px;
+    height: 7.2vh;
+    display: flex;
+    align-items: center;
+}
+
+
+/*? Navigation-Bar Section*/
+.main-nav{
+    justify-content: space-between;
+}
+
+.company-logo img{
+    width: 200px;
+}
+
+.nav-links{
+    flex-basis: 730px;
+}
+
+.nav-links ul{
+    justify-content: end;
+    gap: 40px;
+}
+
+.sign-head{
+    width:100px;
+}
+
+
+/*? Header Section */
+header{
+    padding: 50px var(--padding-inline-section) 0;
+}
+
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}
+.header-left{
+    max-width:40vw;
+}
+
+.header-left h1{
+    margin-top: 20px;
+}
+
+.header-right img{
+    width:600px;
+}
+
+.get-started-btn{
+    margin-top: 20px;
+    width: 150px;
+    height: 51px;
+}
+
+
+/*? Companies Section  */
+.companies-header{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    color: var(--primary-text-color)
+}
+
+.logos{
+    height: 46px;
+    justify-content: space-between;
+    margin-top:15px;
+    flex-wrap: wrap;
+}
+
+.logo{
+    max-width: 120px;
+    width: 120px;
+}
+
+
+/*? Features Section */
+
+.features-section{
+    padding: 80px var(--padding-inline-section) 0;
+    background-image: url("./assets/asset\ 34.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 800px;
+}
+
+.features-header{
+    width: 100%;
+    display:inline-block;
+    text-align: center;
+}
+
+.features-btn{
+    margin-left: 500px;
+    width:200px;
+}
+
+.features-header h2{
+    margin-bottom: 10px;
+}
+
+.features-area{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:40px;
+    margin-top: 30px;
+}
+.features-area img{
+    width:45px;
+}
+
+.features-card{
+    flex-direction: column;
+    gap:10px;
+    max-width: 30%;
+    text-align:center;
+}
+
+
+/*? Big Feature Section */
+
+.big-features-section{
+    margin-top: 30px var(--padding-inline-section) 0;
+}
+
+.big-features-container{
+    gap:30px;
+}
+
+.feature-img img{
+    width: 100%;
+}
+
+.feature-des{
+    flex-direction:column;
+    align-items: flex-start;
+    padding-bottom:140px;
+    padding-left: 80px;
+    gap:10px;
+}
+
+/*? Examples Section */
+
+.examples-header{
+    flex-direction: column;
+    gap: 8px;
+}
+
+.examples-btn{
+    width:200px;
+}
+
+.examples-area{
+    padding-top: 22px;
+    justify-content: space-between;
+}
+
+.examples-card{
+    width:23%;
+    position: relative;
+    min-height: 320px;
+    background: black;
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url('./assets/asset\ 36.jpeg'); 
+    background-size: cover;
+    transition: 0.2 ease-out;
+}
+.examples-card:nth-child(2){
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url('./assets/asset\ 37.jpeg');
+    background-size: cover;
+}
+.examples-card:nth-child(3){
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url('./assets/asset\ 38.jpeg');
+    background-size: cover;
+}
+.examples-card:nth-child(4){
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url('./assets/asset\ 39.jpeg');
+    background-size: cover;
+}
+
+.examples-card:hover{
+    box-shadow: 0 0 10px black;
+}
+
+.card-text{
+    position: absolute;
+    color: white;
+    /* top: 58%; */
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+
+/*? CTA Section */
+
+.cta-section{
+    height: 300px;
+}
+
+.cta-section-container{
+    flex-direction: column;
+    gap:20px;
+    padding-top:80px;
+}
+
+
+/*? Footer Section */
+
+.link-column{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-container{
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer-container h4{
+    margin-bottom: 20px;
+}
+.footer-container a{
+    margin-bottom: 8px;
+    color: var(--secondary-text-color)
+}
+
+footer{
+    background-color: #fee8f3;
+}
+
+
+/*? Sub Footer */
+
+.sub-footer{
+    background-color: #eab7cf;
+}
+
+.subfooter-container{
+    justify-content: center;
+    gap: 30px;
+}
